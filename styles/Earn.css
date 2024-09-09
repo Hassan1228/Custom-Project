@@ -1,0 +1,104 @@
+.navitem{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.card-container {
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card1{
+    background-color: #212121;
+        border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.icon {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.heading{
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color:#b9b9b9;
+}
+
+.learn-more-btn {
+    background-color: #d40000;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #b30000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .learn-more-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

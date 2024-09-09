@@ -1,0 +1,46 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+.edit-profile {
+    background-color: #272727;
+    padding: 41px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-profile header h1 {
+    font-size: 28px;
+    color: #f8f9fa;
+}
+
+.edit-profile header p {
+    font-size: 16px;
+    color: #f8f9fa;
+}
+
+.edit-profile .form-control {
+    border-radius:12px;
+}
+
+.edit-profile .btn-primary {
+    background-color: red;
+    border: none;
+    
+}
+.edit-profile .btn-primary {
+    background-color: red;
+    border: none;
+    display: block;
+    margin: auto;
+}
+.mb-3 {
+    margin-bottom: 2rem !important;
+}
+
+
+.navitem{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }

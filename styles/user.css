@@ -1,0 +1,125 @@
+.user-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-page header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-page header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right:20px;
+  }
+  
+  .user-page header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .user-page header p {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+  }
+  
+  .user-page nav {
+    margin-bottom: 20px;
+  }
+  
+  .user-page nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .user-page nav li {
+    margin-right: 20px;
+  }
+  
+  .user-page nav a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  .user-page nav a:hover {
+    color: #23527c;
+  }
+  
+  .user-page main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .user-page section {
+    flex-basis: 45%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-page section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .user-page section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .user-page section li {
+    margin-bottom: 10px;
+  }
+  
+  .user-page section a {
+    text-decoration: none;
+    color: red;
+  }
+  
+  .user-page section a:hover {
+    color: red;  }
+  
+  .user-page footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .user-page footer p {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .navitem{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .content{
+    text-align: center;
+  }
+
+  #toggle-sidebar{
+    position: absolute;
+    right: 100%;
+  }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Upload Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./styles/stile.css">
+
+</head>
+<body>
+    
+    <div class="upload-container">
+        <h1>Upload videos</h1>
+        <div class="upload-box">
+            <div class="upload-icon">
+                <i class="fas fa-cloud-upload-alt"></i>
+            </div>
+            <p>Drag and drop video files to upload</p>
+            <p>Your videos will be private until you publish them.</p>
+            <input type="file" id="file-input" accept="video/*" multiple>
+            <button onclick="document.getElementById('file-input').click()">Select files</button>
+        </div>
+        <div id="video-preview" class="video-preview"></div>
+    </div>
+
+    <script src="./Js/script.js"></script>
+    <script src="./Js/scrtp.js"></script>
+
+</body>
+</html>

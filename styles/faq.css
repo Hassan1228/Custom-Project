@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  max-width: 75%;
+  margin: auto;
+}
+
+.wrapper > p,
+.wrapper > h1 {
+  margin: 1.5rem 0;
+  text-align: center;
+  color: white; 
+}
+
+.wrapper > h1 {
+  letter-spacing: 3px;
+}
+
+.accordion {
+  background-color: #212121;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 2rem 2.5rem;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.accordion i {
+  font-size: 1.6rem;
+  background-color: #212121;
+}
+
+.active,
+.accordion:hover {
+  background-color: #21212179;
+}
+.pannel {
+  padding: 0 2rem 2.5rem 2rem;
+  background-color: white;
+  overflow: hidden;
+  background-color: #212121;
+  display: none;
+}
+.pannel p {
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  background-color: #212121;
+}
+
+.faq {
+  border: 1px solid #212121;
+  margin: 10px 0;
+}
+.faq.active {
+  border: none;
+}
+
+.navitem{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
