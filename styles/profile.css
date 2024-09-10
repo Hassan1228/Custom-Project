@@ -1,8 +1,10 @@
-body {
-    background-color: #f8f9fa;
-    font-family: 'Arial', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
-
 .edit-profile {
     background-color: #272727;
     padding: 41px;

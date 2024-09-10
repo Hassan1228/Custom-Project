@@ -1,0 +1,61 @@
+/* Chat window styles */
+.chat-window {
+    height: calc(100vh - 200px); /* Adjust based on header/footer size */
+    overflow-y: auto;
+  }
+  
+  /* Message styling */
+  .message {
+    border-bottom: 1px solid #212121;
+    padding: 10px 0;
+  }
+  
+  .message .message-body {
+    background-color: #212121;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .message .message-body h6 {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .message .message-body p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .message .message-body small {
+    display: block;
+    color: #6c757d;
+    font-size: 12px;
+  }
+  
+  /* Message input styles */
+  #messageForm .input-group {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
+    color: var(--bs-list-group-color);
+    text-decoration: none;
+    background-color: #212121;
+    border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
+}
+.list-group-item:hover {
+    position: relative;
+    display: block;
+    padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
+    color: var(--bs-list-group-color);
+    text-decoration: none;
+    background-color: #212121;
+    border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
+}

@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
 .user-page {
     max-width: 800px;
     margin: 40px auto;
@@ -51,11 +59,16 @@
   
   .user-page nav a {
     text-decoration: none;
-    color: #337ab7;
+    color: red!important;
   }
+
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: white!important;
+    background-color: red!important;
+}
   
   .user-page nav a:hover {
-    color: #23527c;
+    color: red;
   }
   
   .user-page main {
@@ -91,11 +104,11 @@
   
   .user-page section a {
     text-decoration: none;
-    color: red;
+    color: red!important;
   }
   
   .user-page section a:hover {
-    color: red;  }
+    color: red!important;  }
   
   .user-page footer {
     margin-top: 20px;
@@ -114,7 +127,9 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
-
+  .nav-link{
+    color: #f9f9f9!important;
+  } 
   .content{
     text-align: center;
   }
@@ -123,3 +138,57 @@
     position: absolute;
     right: 100%;
   }
+
+  /* user.css */
+
+.profile-section {
+  background-color: #272727;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.profile-header {
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.username {
+  margin-top: 10px;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+
+.action-buttons a {
+  display: inline-block;
+  margin: 10px 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.action-buttons .btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.action-buttons .btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.action-buttons .btn-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.action-buttons .btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
