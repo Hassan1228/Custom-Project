@@ -130,3 +130,29 @@
     padding: 10px 20px;
     border-radius: 5px;
   }
+
+  .top-creator {
+    overflow-x: auto; /* Ensure horizontal scroll is enabled on smaller screens */
+    white-space: nowrap; /* Prevent wrapping of items */
+}
+/* Customize scrollbar background */
+.top-creator::-webkit-scrollbar {
+width: 8px; /* Width of the scrollbar */
+height: 8px; /* Height of the scrollbar (for horizontal scrollbar) */
+}
+
+/* Customize scrollbar track */
+.top-creator::-webkit-scrollbar-track {
+background: #1e1e1e; /* Track color */
+}
+
+/* Customize scrollbar thumb */
+.top-creator::-webkit-scrollbar-thumb {
+background: red; /* Scrollbar color */
+border-radius: 4px; /* Rounded corners for scrollbar thumb */
+}
+
+
+.creator {
+    flex: 0 0 auto; /* Prevent shrinking and allow horizontal alignment */
+}

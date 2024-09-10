@@ -172,7 +172,11 @@ display: block!important;
     #sidebar.show {
         left: 0;
     }
-
+    .filter-container {
+        padding: 10px;
+        margin-bottom: 0px!important;
+        margin-top: 0px!important;
+    }
     .toggle-btn {
         display: inline-block;
         cursor: pointer;
@@ -237,7 +241,7 @@ display: block!important;
     .smob{
         display: none!important;
     }
-    
+   
  
   
 }
@@ -290,5 +294,133 @@ display: block!important;
         margin-top: 10px;
         width: 100%;
         text-align: center;
+    }
+}
+
+
+/* Base Styles */
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  
+  .container1 {
+    display: flex;
+    flex-grow: 1;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  /* Left Side Styles */
+  .left-side {
+    flex: 2; /* Adjusts the size of the left side relative to the right side */
+  }
+  
+  .slider {
+    /* Slider styles */
+  }
+  
+  .top-creator, .video-grid {
+    margin-top: 1rem;
+  }
+  
+  /* Right Side Styles */
+  .right-side {
+    flex: 1;
+  }
+  
+
+
+  .top-creator {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 10px; /* Space between creator items */
+    padding: 10px 0; /* Add vertical padding */
+}
+
+.creator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-shrink: 0; /* Prevent items from shrinking */
+}
+
+.creator-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Make image circular */
+}
+
+.creator-name {
+    font-size: 1rem; /* Adjust font size if needed */
+}
+
+.creator-stats {
+    font-size: 0.875rem; /* Slightly smaller font size for stats */
+    color: #555; /* Optional: lighter color for stats */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .top-creator {
+        overflow-x: auto; /* Ensure horizontal scroll is enabled on smaller screens */
+        white-space: nowrap; /* Prevent wrapping of items */
+    }
+
+    .creator {
+        flex: 0 0 auto; /* Prevent shrinking and allow horizontal alignment */
+    }
+}
+  /* Responsive Styles */
+  @media (max-width: 1300px) {
+    .container1 {
+      flex-direction: column; /* Stack the left and right sections vertically */
+    }
+  
+    .left-side, .right-side {
+      flex: 1 1 auto; /* Allow sections to grow and shrink as needed */
+    }
+  
+    .slider, .top-creator, .video-grid, .top-streams {
+      width: 100%; /* Ensure sections take full width */
+    }
+    .right-side {
+        width: 100%;
+        padding: 20px;
+        border-radius: 12px;
+        background-color: #272727;
+        height: fit-content;
+        margin-top: 25px;
+    }
+    .left-side {
+        width: 100%;
+        padding: 0;
+
+      }
+      .container1 {
+        display: flex;
+        flex-grow: 1;
+        padding: 0rem;
+        gap: 0rem;
+    }
+    
+  }
+  
+  @media (max-width: 480px) {
+    .left-side, .right-side {
+      padding: 0.5rem; /* Reduce padding on smaller screens */
+    }
+  
+    .stream-img {
+      width: 30px; /* Adjust image sizes for smaller screens */
+      height: 30px;
+    }
+  }
+  @media (max-width: 1199px) {
+    .nav-link {
+        color: #fff;
+        margin: 3px 0!important;
     }
 }

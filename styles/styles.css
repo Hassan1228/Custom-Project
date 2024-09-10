@@ -47,8 +47,8 @@ a:hover {
 
 #sidebar {
     background-color: #272727;
-    width:300px;
-    height: 100vh;
+    width: 300px;
+    height: 115vh;
     position: sticky;
     top: 0;
 }
@@ -77,7 +77,7 @@ a:hover {
     background-color: red;
 }
 
-search_wrap-m search_wrap_3m smob
+
 
 .search_wrap {
     width: 500px;
@@ -176,4 +176,49 @@ search_wrap-m search_wrap_3m smob
 .logout-button {
     background-color: #333;
     color           : #fff;
+}
+
+/* Sidebar styling */
+#sidebar {
+    height: 100vh; /* Full height of the viewport */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Menu container styling */
+#menu {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+}
+
+/* Make the menu scrollable on devices with width 1200px and below */
+@media (max-width: 1200px) {
+    #menu {
+        overflow-y: auto; /* Enable vertical scrolling */
+    }
+}
+/* Custom scrollbar styling for WebKit browsers (Chrome, Safari) */
+#sidebar::-webkit-scrollbar {
+    width: 8px; /* Adjust width as needed */
+    border-radius: 12px; /* Rounded corners for the scrollbar */
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+    background-color: #272727; /* Color of the scrollbar */
+    border-radius: 12px; /* Rounded corners for the scrollbar */
+}
+
+#sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: #272727; /* Darker color when hovered */
+}
+
+#sidebar::-webkit-scrollbar-track {
+    background: #272727; /* Background color of the track */
+}
+
+/* Custom scrollbar styling for Firefox */
+#sidebar {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: red #272727; /* Thumb color and track color */
+    
 }
